@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet"  href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script>
+		window.onload= function(){
+			document.getElementById("container").style.display="none";
+			document.getElementById("content").style.display="block";
+			$(window).load(function(){
+            $('#loading').fadeOut('slow');
+            $('#loading-img').delay(450).fadeOut('slow'); }),6000;}
+	</script>
+</head>
+<style>{box-sizing:border-box}
+	.container {
+		width: 100%; 
+		background-color: #ddd;
+	}
+	.skills {
+	  text-align: right; 
+	  padding-top: 10px; 
+	  color: black; 
+	}
+	.html {width: 90%; background-image: linear-gradient(to right, #00ff99,#00994d,#88cc00);} 
+	.css {width: 30%; background-image: linear-gradient(to right, #00ff99,#00994d,#88cc00);} 
+	.j {width: 10%; background-image: linear-gradient(to right, #00ff99,#00994d,#88cc00);} 
+	.lin {width: 5%; background-image: linear-gradient(to right, #00ff99,#00994d,#88cc00);} 
+	.hr1 {
+        border: 0;
+        height: 3px;
+        background: #095484;
+        background-image: linear-gradient(to right, rgba(209, 151, 65, 0.87), #960a34,rgba(209, 151, 65, 0.87) );}
+    .button {
+        display: inline-block;
+        padding: 7px 20px;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #b34700;
+        background-color: #b34700;
+        border: none;
+        border-radius: 6px;
+		float: right;}
+.button:hover {background-color: #b348006b;
+	transform: translateY(4px);color: white;}
+.button:active {
+        background-color: #b34700;}
+.b1{ 
+        background-color: white;  
+        border: 4px solid #e21a0b;}
+.b1:hover{transform: translateY(4px);background-color: white; color:#e21a0b }
+.header {
+  padding: 39px 16px;
+  background: #b34700 ;
+  color: #f1f1f1;}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 99%;}    
+	</style>
+<body alink="white" vlink="#ffffcc">
+	<div id="container"><div id="loading"><span id="loading-img"><font size=20 ><b>LOADING...</b></font></span></div></div>
+	<div id="content">
+	<div class="header" id="myHeader">
+            <div class="btn-group">
+				<button class="button"><a href="#contact" style="text-decoration:none" ><font face="Verdana"  color=black>Contact</font></a></button>
+			    <button class="button"><a href="#achievements" style="text-decoration:none" ><font face="Verdana"  color=black>Achievements</font></a></button>
+			    <button class="button"><a href="#projects" style="text-decoration:none" ><font face="Verdana"  color=black>Projects</font></a></button>
+			    <button class="button"><a href="#about" style="text-decoration:none" ><font face="Verdana"  color=black>About Me</font></a></button>
+				<button class="button"><a href="#home" style="text-decoration:none" ><font face="Verdana"  color=black>Home</font></a></button> 
+			</div></div>
+			<script>
+				window.onscroll = function() {myFunction()};
+				
+				var header = document.getElementById("myHeader");
+				var sticky = header.offsetTop;
+				
+				function myFunction() {
+				  if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				  } else {
+					header.classList.remove("sticky");
+				  }
+				}
+				</script>
+		
+	<table id="home" border="1" width="100%" cellpadding="20" cellspacing="0" background="thumb1.jpg">
+		<tr>
+			<td><table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+		<tr><td align="center" valign="middle"><p style="background-color:#eee8e896"><font face="Times New Roman" size="6" color=" #145214"><b>HELLO EVERYONE!</b></font></p></td></tr>
+	</table>
+	<table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a001a">
+		<tr><td><table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+		<tr><td height="150" align="center" valign="middle" colspan="2"><font face="Courier New" size="7" color="#4CAF50">About Me</font>
+			<hr color="#4CAF50" width="90"></td></tr>
+        <tr><td width="10%"><img src="img.jpg" style="width:400px;height:650px;"></td>
+			<td width="60%"><p align="center"><font face="Verdana" size="4" color="white">I'm</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <font face="Segoe" size="14" color="#0066cc">Anamika Ranjan</font><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Allura" size="5" color="#a6ff4d"><i>|a Computer Science student at IIITBH|</i></font><br><br></p>
+			<hr class="hr1" /> <hr class="hr1" />
+	<table border="0" width="100%" cellpadding="0" cellspacing="100" bgcolor="#00001a">
+	<tr><td width="80%">		
+     <font color="white" size="6"><u>SKILLS</u></font><br><br>
+	 <font color="#ffb3b3" size="3"><p>HTML</p><div class="container"><div class="skills html">90%</div></div><br>
+	<p>CSS</p><div class="container"><div class="skills css">30%</div></div><br>
+	<p>Java</p><div class="container"><div class="skills j">10%</div></div><br>
+	<p>LINUX</p><div class="container"><div class="skills lin">5%</div></div></font></td>
+	<td width="20%"><font color="white" size="6"><u>EDUCATION</u></font><br><br>
+		<font size="3" color="white"><p><h3><font color="#ffb3b3">2021</font></h3>BTech from IIIT Bhagalpur in the Computer Science domain.</p>
+			<p><h3><font color="#ffb3b3">2020</font></h3>12th from Delhi Public School,Bokaro in the Science stream and scored 95%.</p>
+            <p><h3><font color="#ffb3b3">2018</font></h3>10th from Delhi Public School,Bokaro and scored 96%.</p></font>
+		 </td></tr></table>
+    </td></tr></table></td></tr></table>		
+	<table id="projects" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a001a">
+	     <tr><td><table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+		<tr><td height="180" align="center" valign="middle" colspan="2"><font face="Courier New" size="7"color="#4CAF50">Projects</font>
+						<hr color="#4CAF50" width="90"></td></tr>
+		<tr><td width="45%"><td><font face="Allura" size="4" color="#ff6666"><p><i>In Progress..</i></p></font></td></td></tr>
+	</table>
+	</td>
+	</tr>
+	</table>
+	<table id="achievements" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a001a">
+		<tr><td><table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+		<tr><td height="180" align="center" valign="middle"><font face="Courier New" size="7" color="#4CAF50">Achievements
+				<hr color="#4CAF50" width="100"></font></td></tr>
+        <tr><td><font face="Allura" size="4" color="#ff6666"><p align="center"><i>Will be updated soon..</i></p></font></td></tr>
+    </table></td></tr>
+	</table>
+	<table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#1a001a"><tr>
+		<td><table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+		<tr><td height="180" align="center" valign="middle" colspan="2"> <font face="Courier New" size="7" color="#4CAF50">Contact</font>
+				<hr color="#4CAF50" width="90"></td></tr>
+        <tr><td align="center" valign="top">
+    <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" bgcolor="#1a001a">
+		<tr><td width="30%"><font face="Verdana" size="4" color="white">Name</font></td>
+			<td width="70%"><font face="Verdana" size="4"color="#white"><input type="text" size="40"></font></td></tr>
+			<tr><td width="30%"><font face="Verdana" size="4" color="white">Email</font></td>
+			<td width="70%"><font face="Verdana" size="4" color="white"><input type="email" size="40"></font></td></tr>
+			<tr><td width="30%"><font face="Verdana" size="4" color="white">Message</font></td>
+				<td width="70%"><font face="Verdana" size="4" color="white"><textarea rows="5"  mcols="45"></textarea></font></td></tr>
+			<tr><td width="30%"></td>
+				<td width="70%"><button class="b1" type="submit"><font face="Verdana" size="4"><b>Submit</b></font></button></td></tr></table></td></tr>
+			<tr><td colspan="2"></td></tr></table></td></tr>
+	</table>
+	<table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#00001a">
+		<tr><td><table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+		<tr><td width="90%"></td>
+            <td width="13%" valign="top"><a href="https://www.linkedin.com/in/anamika-ranjan-62a255229/" target="blank"
+                  style="text-decoration:none"><b>LinkedIn</b></a></td>
+			<td width="13%" valign="top"><a href="" style="text-decoration:none"><b>Instagram</b></a></td>		  
+            <td width="13%" valign="top"><a href="https://github.com/anamika3012" target="blank" style="text-decoration:none"><b>GitHub  </b></a></td>
+            <td width="13%" valign="top"><a href="#" style="text-decoration:none"><b>Website</b></a></td>
+        </tr>
+	</table>
+			</td>
+		</tr>
+	</table>
+	<table id="footer" border="0" width="3%" align="right">
+		<tr><td width="10%"><font face="arial"  size="5"><p style="background-color:black"><a href="#header" style="text-decoration:none">
+				<font face="Verdana" color="white" size="6"><abbr title="TOP"><b>^</b></abbr></font></a></p></td>
+	</table></div>
+</body>
+</html>
