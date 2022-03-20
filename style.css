@@ -1,0 +1,42 @@
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+ #loading{
+        width: 270px;
+        height: 70px;
+        transform: skew(20deg);
+        animation-name: example;
+        animation-duration: 6s;
+        animation-direction: reverse;  
+      }
+      
+      @keyframes example {
+        0%   {background-color:rgba(247, 209, 88, 0.973);}
+        25%  {background-color:rgba(181, 238, 128, 0.959);}
+        50%  {background-color:rgb(98, 235, 216);}
+        75%  {background-color:rgb(65, 171, 241); }
+        100% {background-color:rgba(247, 209, 88, 0.973);}
+      }
+#loading span{
+    width: 270px;
+    height: 70px;
+    transform: skew(20deg); 
+    animation-name: animate;
+        animation-duration: 6s;
+        animation-direction: reverse;  
+}
+@keyframes animate {
+    0%   {color: rgba(18, 6, 68, 0.959);}
+    25%  {color: rgba(119, 7, 7, 0.973);}
+    50%  {color: rgb(68, 5, 64);}
+    75%  {color: rgb(6, 75, 9); }
+    100% {color: rgba(18, 6, 68, 0.959);}
+  }
+  #content{
+      display: none;
+      
+  }
