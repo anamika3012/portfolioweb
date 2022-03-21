@@ -5,16 +5,31 @@
 	<link rel="stylesheet"  href="style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
     <script>
-		$(window).on('load', function () {
+	$(window).on('load', function () {
+
             $('#content').css('display', 'none'); 
-            setTimeout(removeLoader, 2000);  });
+
+            setTimeout(removeLoader, 2000); 
+        });
+
         $(document).ready(function () {
-            $(this).scrollTop(0); }); 
+
+            $(this).scrollTop(0);
+
+        }); 
+
         function removeLoader() {
+
             $("#container").fadeOut(500, function () {
+
                 $("#container").remove();
-                $('#content').css('display', 'block'); }); 
+
+                $('#content').css('display', 'block');
+
+            }); 
         }
+
+
 	</script>
 </head>
 <style>{box-sizing:border-box}
